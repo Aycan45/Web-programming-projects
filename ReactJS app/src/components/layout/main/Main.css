@@ -1,0 +1,38 @@
+.user{
+    float: left;
+    display: flex;
+    margin-left: 20px;
+}
+.user-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.username{
+    margin: auto;
+    padding-left: 10px;
+}
+.main-content{
+    min-height:  calc(100vh - 90px);
+    background-color: lightskyblue;
+}
+.name{
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: darkturquoise;
+}
+.logout-btn{
+    color: cornsilk;
+}
+.posts-list-wrapper{
+    height: 100%;
+}
+.usname{
+    padding-left: 10px;
+}
+.post-edit-wrapper{
+    width: 20%;
+    margin: auto;
+}

@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "5eda3af725cbfcedcb1d3a30",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=4",
+      "age": "21",
+      "name": "Ashlee Sher",
+      "email": "ashleesherman@collaire.co",
+      "password": 12345
+    },
+    {
+      "id": "5eda3af77f72aeb73e1e0cd0",
+      "isActive": true,
+      "isAdmin": true,
+      "picture": "https://picsum.photos/200/300?random=1",
+      "age": 27,
+      "name": "Alvarez Hays",
+      "email": "alvarezhays@collaire.com",
+      "password": 12345
+    },
+    {
+      "id": "5eda3af766959135db2f41e4",
+      "isActive": false,
+      "isAdmin": true,
+      "picture": "https://picsum.photos/200/300?random=1",
+      "age": 26,
+      "name": "Lena Harrison",
+      "email": "lenaharrison@collaire.com",
+      "password": 12345
+    },
+    {
+      "id": "5eda3af729099674f675e3d3",
+      "isActive": false,
+      "isAdmin": true,
+      "picture": "https://picsum.photos/200/300?random=1",
+      "age": 26,
+      "name": "Laverne Hinton",
+      "email": "lavernehinton@collaire.com",
+      "password": 12345
+    },
+    {
+      "id": "5eda3af7ff3bc3187f2926c4",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=3",
+      "age": 33,
+      "name": "Letitia Ramirez",
+      "email": "letitiaramirez@collaire.com",
+      "password": 12345
+    },
+    {
+      "name": "Phil",
+      "email": "phil@email.com",
+      "password": "1111",
+      "age": "12",
+      "errorMessage": "",
+      "isActive": true,
+      "isAdmin": false,
+      "picture": "https://picsum.photos/200/300?random=4",
+      "id": "BpHk31Q"
+    }
+  ],
+  "posts": [
+    {
+      "title": "first post",
+      "content": "Hello guys want to talk about feelings?",
+      "authorid": "",
+      "authorName": "Ashlee Sher",
+      "data": "",
+      "authorId": "5eda3af725cbfcedcb1d3a30",
+      "date": "2020-07-23T15:24:13.870Z",
+      "id": 1
+    },
+    {
+      "title": "first post",
+      "content": "hello",
+      "authorid": "",
+      "authorName": "Phil",
+      "data": "",
+      "authorId": "BpHk31Q",
+      "date": "2020-07-23T15:41:50.835Z",
+      "id": 2
+    },
+    {
+      "title": "lil",
+      "content": "everything i understood from the song of Future is Lil bitch",
+      "authorid": "",
+      "authorName": "Alvarez Hays",
+      "data": "",
+      "authorId": "5eda3af77f72aeb73e1e0cd0",
+      "date": "2020-07-23T15:58:23.881Z",
+      "id": 3
+    }
+  ]
+}
