@@ -1,0 +1,62 @@
+#news1{
+	width: 100%;
+}
+#news2{
+	width: 100%;
+}
+#mysteries{
+	width: 100%;
+}
+#video{
+	width: 100%;
+}
+iframe{
+	width: 250px;
+	height: 250px;
+}
+.text{
+	font-size: 15px;
+}
+.numbertext{
+	font-size: 13px;
+}
+#mysteries article a {
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(92, 92, 96);
+}
+header .btn{
+	margin-top: 20px;
+	margin-left: 40%; 
+	border-radius: 25px;
+	padding: 10px;
+	font-size: 10px;
+	text-decoration: none;
+	color: black;
+	background-color: grey;
+}
+.btn:hover{
+	background-color: rgb(84, 85, 86);
+	color: white;
+	box-shadow: 0px 15px 20px rgba(37, 39, 40);
+}
+header{
+	width: 100%;
+}
+header li {
+  float: right;
+  width: 100%;
+}
+header h1{
+	font-size: 20px;
+}
+header p{
+	font-size: 15px;
+}
+#reg{
+	width: 100%;
+}
+#text{
+	width: 100%;
+}
