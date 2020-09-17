@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Втората световна война</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="autor" content="Aycan Feyzulla">
+</head>
+<body>
+	
+	<div>
+		<form method="POST" action="Recepti.php" id="search">
+			<label>Търсене в архивите</label><br>
+			<input type="text" name="search" id="search-input"><br>
+			<input type="submit" name="submit" id="button">
+			</form>
+	</div>
+	<div id="Time">
+	</div>
+	<p id="demo"></p>
+	
+			<nav id="main-nav">
+		<ul class="mainsub">
+			<li><a href="#">Предвоенни години</a>
+				<ul class="sub">
+					<li><a href="#">Германия</a>
+						<ul class="sub1">
+							<li><a href="#">Анексиране на Австрия</a></li>
+							<li><a href="#">Анексиране на Чехословакия</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">За войната</a></li>
+			<li><a href="#">Учaстници</a></li>
+			<li><a href="#">Фронтове</a></li>
+		</ul>
+	</nav>
+		<main>
+
+		<section id="recipe">
+
+			<h1>Предистория</h1>
+			<article>
+				<p>Втората световна война е световен военен конфликт, който протича през средата на ХХ век (от 1 септември 1939 до 2 септември 1945 г.). Наречена е така, защото за втори път след Първата световна война всички развити страни в света по това време участват в бойни действия, които се водят на територията на четири (Европа, Азия, Африка и Австралия) от седемте континента и в различна степен във всички океани – Атлантическия, Тихия, Северния ледовит и Индийския. </p>
+			</article>
+
+			<article id="article2">
+				<p>Като резултат от агресивната политика на редица държави избухват множество локални конфликти, предшестващи Втората световна война – японската агресия в Манджурия през 1931 г., Гражданската война в Испания, Втората китайско-японска война (започнала на 7 юли 1937 г. и завършила на практика с края на Втората световна война), необявената Съветско-японска гранична война, италианското нахлуване в Абисиния и Албания и др.</p>
+
+			</article>
+			<article id="article3">
+				<p>
+				През 1938 г. след остра политическа криза Австрия се присъединява към Германия (т.нар. аншлус). Провежда се Мюнхенската конференция, която завършва с подписването на Мюнхенското споразумение. То води до германската анексия на Судетите, а по-късно (15 март 1939 г.) и до окупация на останалата част от Чехия и създаването на независима държава Словакия. След провала на Мюнхенското споразумение Полша и Франция подписват съюзническо споразумение.
+				</p>
+			</article>
+			<article id="reg">
+			<h2>Искаш да се присъединиш към клуб "История"?</h2>
+			<p>Запиши се отдолу</p>
+			<form id="form1" name="Form" onsubmit="return Validate()" action="register.php" method="POST">
+				<p class="reg">Име:</p>
+				<input type="text" name="fname" id="fname" placeholder="Име...">
+				<br>
+				<br><p class="reg">Фамилия:</p><input type="text" name="lname" id="lname" placeholder="Фамилия...">
+				<br>
+				<br><p class="reg">Потребителско име:</p><input type="text" name="username" id="username" placeholder="Потребителско име...">
+				<br>
+				<br><p class="reg">Парола:</p><input type="password" name="password" id="password" placeholder="Парола...">				<br>
+				<br><p class="reg">Повторете парола:</p><input type="password" name="password" id="repeatpassword" placeholder="Повторете паролата...">
+				<br>
+				<br><p class="reg">Имейл:</p><input type="text" name="email" id="email" placeholder="Твоят имейл тук...">
+				<br>
+				<br><input type="submit" name="register" value="Register" id="register">
+			</form>
+		</section>
+		<aside id="sidebar">
+				<h2>Посетете и други статии за войната</h2>
+				<div id="one"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p></div>
+				<div id="two"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p></div>
+				<div id="three"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p></div>
+				
+		</aside>
+	</main>
+</body>
+<script type="text/javascript" src="neshto.js"></script>
+<script type="text/javascript">
+	var today = new Date()
+    var curHr = today.getHours()
+
+    if (curHr >= 0 && curHr < 6) {
+        document.getElementById("demo").innerHTML = 'What are you doing that early?';
+    } else if (curHr >= 6 && curHr < 12) {
+        document.getElementById("demo").innerHTML = 'Good Morning';
+    } else if (curHr >= 12 && curHr < 17) {
+        document.getElementById("demo").innerHTML = 'Good Afternoon';
+    } else {
+        document.getElementById("demo").innerHTML = 'Good Evening';
+    }
+</script>
+<script type="text/javascript">
+	function Validate(){
+  var name = document.forms["Form"]["fname"]; 
+  var lname = document.forms["Form"]["lname"];               
+  var email = document.forms["Form"]["email"]; 
+  var password = document.forms["Form"]["password"];
+  var username = document.forms["Form"]["username"];
+  var repeatpassword=document.forms["Form"]["repeatpassword"];
+    if (name.value == "" && name.value.lenght<3)                                  
+    { 
+        window.alert("Напишете името си!"); 
+        name.focus(); 
+        return false;
+    }
+    if (lname.value == "" && lname.value.lenght<3)                                  
+    { 
+        window.alert("Напишете фамилията си!"); 
+        lname.focus();
+        return false; 
+    }
+     if (username.value == "" && username.value.lenght<3)                        
+    { 
+        window.alert("Напишете си потребителското име"); 
+        username.focus();
+        return false; 
+    }
+    if (!name.value.match(/[A-Z]/g) || !lname.value.match(/[A-Z]/g)) {
+        window.alert('Няма голяма буква на имената!');
+        name.focus();
+        lname.focus();
+        return false; 
+    }
+    if (!name.value.match(/[a-z]/g) || !lname.value.match(/[a-z]/g)) {
+        window.alert('Няма малка буква на имената!');
+        name.focus();
+        lname.focus();
+        return false; 
+
+    }
+    if (!password.value.match(/[0-9]/g)) {
+        window.alert('Няма число на паролата!');
+        password.focus();
+        return false; 
+    }
+    if (!password.value.match(/[A-Z]/g)) {
+        window.alert('Няма голяма буква на паролата!');
+        password.focus();
+        return false; 
+    }   
+    if (email.value == "" && email.value.lenght<3)                                   
+    { 
+        window.alert("Напишете валиден имейл!"); 
+        email.focus(); 
+        return false; 
+
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Напишете валиден имейл!"); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Напишете валиден имейл!"); 
+        email.focus(); 
+        return false; 
+    }
+     if (!password==repeatpassword)                        
+    { 
+        window.alert("Паролите на съвпадат!"); 
+        password.focus(); 
+        return false; 
+    }
+    if (password.value == "" && password.value.lenght<3)                        
+    { 
+        window.alert("Напишете си паролата"); 
+        password.focus();
+        return false; 
+    }
+    return true; 
+  }
+</script>
+</html>

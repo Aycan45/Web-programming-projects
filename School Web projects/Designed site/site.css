@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700,900');
+*{
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Montserrat", "Helvetica",sans-serif;
+
+}
+header{
+	background-image: url("https://images.unsplash.com/photo-1556053424-7081188182ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+	/*width: calc(100vw - 296px); създава проблеми при браузъри с фиксиран скролбар*/
+	height: calc(100vh - 100px);
+	background-size: cover;
+	background-position: center center;
+	padding: 50px 148px;
+}
+nav ul li{
+	display: inline-block;
+	color: white;
+	margin: 0px 15px;
+
+
+}
+nav ul li.active, nav ul li:hover{
+	border-bottom: 2px solid #43cb83;
+	padding-bottom: 8px;
+
+}
+nav img {
+	height: 35px;
+}
+nav ul{
+	float: right;
+}
+header h1{
+	font-size: 56px;
+	font-weight: bolder;
+	color: white;
+	margin-top: 170px;
+	margin-bottom: 25px;
+}
+header p{
+	color: white;
+	margin-bottom: 80px;
+}
+.btn{
+	color: white;
+	border-radius: 100px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	padding: 16px 60px;
+	font-size: 14px;
+}
+.blue-btn{
+	background-color: rgb(31,93,234);
+
+}
+.ghost-btn{
+	border:2px solid rgba(255,255,255,0.2);
+}
+header .blue-btn{
+	margin-right: 32px;
+	filter: drop-shadow(0px, 29px, 40px rgba(0,0,0,0.5));
+	-webkit-filter: drop-shadow(0px, 29px, 40px rgba(0,0,0,0.5));
+}
+.img{
+	background-size: cover;
+	background-position: center center;
+	width: 50%;
+	height: 400px;
+	background-color: #eff0f4;
+}
+div.img, article{
+	float: left;
+	width: 50%;
+}
+article h3{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-bottom: 30px
+}
+.yellow-tag{
+	color: yellow;
+}
+.green-tag{
+	color: green;
+}
+article h1{
+	font-size: 30px;
+	font-weight: bolder;
+	margin-bottom: 30px;
+
+}
+article p{
+	margin-bottom: 50px;
+}
+.small-btn{
+	background-color: rgb(31,93,234);
+	font-size: 12px;
+	padding: 10px,60px;
+}
+article{
+	padding: 60px;
+	width: calc(50% - 120px);
+	height: 280px;
+}
+#article{
+	height: 800px;
+}
+#Work{
+	background-color: #222328;
+	padding: 65px 120px;
+}
+section#Work h1{
+	font-size: 50px;
+	font-weight: bolder;
+	text-align: center;
+}
+section#Work p{
+	font-size: 15px;
+	color: black;
+	font-weight: lighter;
+	text-align: center;
+}
+section#Work .wrapper > div{
+	height: 340px;
+	width: calc((100vw - 240px - 90px)/4)
+	margin: 67px 30px;
+	background-color: forestgreen;
+	border-radius: 10px;
+	display: inline-block;
+}
+section#Work .wrapper > div:last-child{
+	margin: 0;
+}
+
+
+

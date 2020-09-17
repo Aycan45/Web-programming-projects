@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	color:inherit;
+	list-style: none;
+	font-family: "Montserrat", arial,sans-serif;
+}
+
+header{
+	width:100vw;
+	height:100vh;
+	background-color:darkred;
+	color:darkgrey;
+	text-align: center;
+	background: url("https://noblink.bg/wp-content/uploads/2019/03/Untitled-1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.wrapper{
+	width:80vw;
+	margin:0 auto;
+}
+main{
+	float: left;
+width: calc(70% - 60px);
+background: #eee;
+padding: 50px 30px;
+}
+
+aside{
+	float: left; 
+width: calc(30% - 30px);
+background: #ddd;
+padding: 50px 15px 0px;
+}
+article{
+	margin-bottom: 50px;
+	border-bottom: 2px solid grey;
+	padding-bottom: 20px;
+}
+article h1{
+	font-size: 28px;
+}
+article h2{
+	margin-bottom: 30px;
+	font-size: 16px;
+	color: darkgrey;
+}
+article img{
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+article p{
+	margin: 5px 0px;
+}
+article p.beg{
+	font-weight: bold;
+}
+article p.quote{
+	font-style: italic;
+	font-size: 22px;
+}
+article p.quote span{
+	text-transform: uppercase;
+	text-align: right;
+	display: inline-block;
+	font-size: 18px;
+	width: 100%;
+}
+
+/*section{}
+.class{}
+#id{}
+article h2{
+}*/
